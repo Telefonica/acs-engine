@@ -43,18 +43,18 @@
       },
       "type": "Microsoft.Network/networkInterfaces"
     },
-{{if .IsManagedDisks}} 
+{{if .IsManagedDisks}}
    {
       "location": "[variables('location')]",
       "name": "[variables('{{.Name}}AvailabilitySet')]",
       "apiVersion": "[variables('apiVersionStorageManagedDisks')]",
       "properties":
         {
-            "platformFaultDomainCount": "2",
+            "platformFaultDomainCount": "3",
             "platformUpdateDomainCount": "3",
 		"managed" : "true"
         },
-  
+
       "type": "Microsoft.Compute/availabilitySets"
     },
 {{else if .IsStorageAccount}}
@@ -103,7 +103,7 @@
       "properties": {},
       "type": "Microsoft.Compute/availabilitySets"
     },
-{{end}} 
+{{end}}
   {
     {{if .IsManagedDisks}}
       "apiVersion": "[variables('apiVersionStorageManagedDisks')]",

@@ -1,11 +1,11 @@
-{{if .MasterProfile.IsManagedDisks}} 
+{{if .MasterProfile.IsManagedDisks}}
     {
       "apiVersion": "[variables('apiVersionStorageManagedDisks')]",
       "location": "[variables('location')]",
       "name": "[variables('masterAvailabilitySet')]",
       "properties":
         {
-            "platformFaultDomainCount": "2",
+            "platformFaultDomainCount": "3",
             "platformUpdateDomainCount": "3",
 		        "managed" : "true"
         },
@@ -79,20 +79,20 @@
         "securityRules": [
 {{if .HasWindows}}
           {
-            "name": "allow_rdp", 
+            "name": "allow_rdp",
             "properties": {
-              "access": "Allow", 
-              "description": "Allow RDP traffic to master", 
-              "destinationAddressPrefix": "*", 
-              "destinationPortRange": "3389-3389", 
-              "direction": "Inbound", 
-              "priority": 102, 
-              "protocol": "Tcp", 
-              "sourceAddressPrefix": "*", 
+              "access": "Allow",
+              "description": "Allow RDP traffic to master",
+              "destinationAddressPrefix": "*",
+              "destinationPortRange": "3389-3389",
+              "direction": "Inbound",
+              "priority": 102,
+              "protocol": "Tcp",
+              "sourceAddressPrefix": "*",
               "sourcePortRange": "*"
             }
           },
-{{end}}       
+{{end}}
           {
             "name": "allow_ssh",
             "properties": {
@@ -317,7 +317,7 @@
                 {
                   "id": "[concat(variables('masterLbID'), '/backendAddressPools/', variables('masterLbBackendPoolName'))]"
                 }
-{{if gt .MasterProfile.Count 1}}                
+{{if gt .MasterProfile.Count 1}}
                 ,
                 {
                    "id": "[concat(variables('masterInternalLbID'), '/backendAddressPools/', variables('masterLbBackendPoolName'))]"
@@ -462,7 +462,7 @@
 {{if ne .MasterProfile.OSDiskSizeGB 0}}
             ,"diskSizeGB": {{.MasterProfile.OSDiskSizeGB}}
 {{end}}
-            
+
           }
         }
       },
