@@ -1967,7 +1967,7 @@
       "name": "[variables('masterAvailabilitySet')]",
       "properties": {
         "managed": "true",
-        "platformFaultDomainCount": "2",
+        "platformFaultDomainCount": "3",
         "platformUpdateDomainCount": "3"
       },
       "type": "Microsoft.Compute/availabilitySets"
