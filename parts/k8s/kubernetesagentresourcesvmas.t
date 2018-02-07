@@ -50,11 +50,10 @@
       "apiVersion": "[variables('apiVersionStorageManagedDisks')]",
       "properties":
         {
-            "platformFaultDomainCount": "3",
-            "platformUpdateDomainCount": "3",
-		"managed" : "true"
+            "platformFaultDomainCount": "{{GetKubernetesAgentFaultDomainCount .}}",
+            "platformUpdateDomainCount": "{{GetKubernetesAgentUpdateDomainCount .}}",
+            "managed" : "true"
         },
-
       "type": "Microsoft.Compute/availabilitySets"
     },
 {{else if .IsStorageAccount}}

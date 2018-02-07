@@ -1117,6 +1117,12 @@ func (t *TemplateGenerator) getTemplateFuncMap(cs *api.ContainerService) templat
 			}
 			return str
 		},
+		"GetKubernetesAgentFaultDomainCount": func(_ *api.AgentPoolProfile) string {
+			return string(cs.Properties.OrchestratorProfile.KubernetesConfig.FaultDomainCount)
+		},
+		"GetKubernetesAgentUpdateDomainCount": func(_ *api.AgentPoolProfile) string {
+			return string(cs.Properties.OrchestratorProfile.KubernetesConfig.UpdateDomainCount)
+		},
 		"GetMasterSwarmCustomData": func() string {
 			files := []string{swarmProvision}
 			str := buildYamlFileWithWriteFiles(files)

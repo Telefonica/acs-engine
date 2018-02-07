@@ -237,6 +237,8 @@ type KubernetesConfig struct {
 	EtcdVersion                      string            `json:"etcdVersion,omitempty"`
 	EtcdDiskSizeGB                   string            `json:"etcdDiskSizeGB,omitempty"`
 	Addons                           []KubernetesAddon `json:"addons,omitempty"`
+	FaultDomainCount                 int               `json:"faultDomainCount"`
+	UpdateDomainCount                int               `json:"updateDomainCount"`
 }
 
 // DcosConfig Configuration for DC/OS
