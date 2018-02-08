@@ -3,7 +3,7 @@ package acsengine
 import (
 	"strconv"
 
-	"github.com/Azure/acs-engine/pkg/api/common"
+	"github.com/Telefonica/acs-engine/pkg/api/common"
 )
 
 // KubeConfigs represents Docker images used for Kubernetes components based on Kubernetes versions (major.minor.patch)

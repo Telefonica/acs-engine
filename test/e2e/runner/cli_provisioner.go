@@ -10,13 +10,13 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/Azure/acs-engine/test/e2e/azure"
-	"github.com/Azure/acs-engine/test/e2e/config"
-	"github.com/Azure/acs-engine/test/e2e/dcos"
-	"github.com/Azure/acs-engine/test/e2e/engine"
-	"github.com/Azure/acs-engine/test/e2e/kubernetes/node"
-	"github.com/Azure/acs-engine/test/e2e/metrics"
-	"github.com/Azure/acs-engine/test/e2e/remote"
+	"github.com/Telefonica/acs-engine/test/e2e/azure"
+	"github.com/Telefonica/acs-engine/test/e2e/config"
+	"github.com/Telefonica/acs-engine/test/e2e/dcos"
+	"github.com/Telefonica/acs-engine/test/e2e/engine"
+	"github.com/Telefonica/acs-engine/test/e2e/kubernetes/node"
+	"github.com/Telefonica/acs-engine/test/e2e/metrics"
+	"github.com/Telefonica/acs-engine/test/e2e/remote"
 	"github.com/kelseyhightower/envconfig"
 )
 

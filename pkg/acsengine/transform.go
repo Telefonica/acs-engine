@@ -6,7 +6,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/Azure/acs-engine/pkg/i18n"
+	"github.com/Telefonica/acs-engine/pkg/i18n"
 	"github.com/Azure/azure-sdk-for-go/arm/compute"
 	"github.com/sirupsen/logrus"
 )

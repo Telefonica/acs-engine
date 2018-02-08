@@ -11,11 +11,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Azure/acs-engine/pkg/acsengine"
-	"github.com/Azure/acs-engine/pkg/api"
-	"github.com/Azure/acs-engine/pkg/armhelpers"
-	"github.com/Azure/acs-engine/pkg/i18n"
-	"github.com/Azure/acs-engine/pkg/operations"
+	"github.com/Telefonica/acs-engine/pkg/acsengine"
+	"github.com/Telefonica/acs-engine/pkg/api"
+	"github.com/Telefonica/acs-engine/pkg/armhelpers"
+	"github.com/Telefonica/acs-engine/pkg/i18n"
+	"github.com/Telefonica/acs-engine/pkg/operations"
 	"github.com/leonelquinteros/gotext"
 
 	log "github.com/sirupsen/logrus"

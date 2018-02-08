@@ -24,7 +24,7 @@ ifeq ($(GITTAG),)
 GITTAG := $(VERSION_SHORT)
 endif
 
-REPO_PATH := github.com/Azure/acs-engine
+REPO_PATH := github.com/Telefonica/acs-engine
 DEV_ENV_IMAGE := quay.io/deis/go-dev:v1.2.0
 DEV_ENV_WORK_DIR := /go/src/${REPO_PATH}
 DEV_ENV_OPTS := --rm -v ${CURDIR}:${DEV_ENV_WORK_DIR} -w ${DEV_ENV_WORK_DIR} ${DEV_ENV_VARS}
@@ -93,7 +93,7 @@ clean:
 
 GIT_BASEDIR    = $(shell git rev-parse --show-toplevel 2>/dev/null)
 ifneq ($(GIT_BASEDIR),)
-	LDFLAGS += -X github.com/Azure/acs-engine/pkg/test.JUnitOutDir=${GIT_BASEDIR}/test/junit
+	LDFLAGS += -X github.com/Telefonica/acs-engine/pkg/test.JUnitOutDir=${GIT_BASEDIR}/test/junit
 endif
 
 test: generate

@@ -19,9 +19,9 @@ import (
 	"text/template"
 
 	//log "github.com/sirupsen/logrus"
-	"github.com/Azure/acs-engine/pkg/api"
-	"github.com/Azure/acs-engine/pkg/helpers"
-	"github.com/Azure/acs-engine/pkg/i18n"
+	"github.com/Telefonica/acs-engine/pkg/api"
+	"github.com/Telefonica/acs-engine/pkg/helpers"
+	"github.com/Telefonica/acs-engine/pkg/i18n"
 	"github.com/Masterminds/semver"
 	"github.com/ghodss/yaml"
 )

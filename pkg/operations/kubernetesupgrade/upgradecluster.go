@@ -6,9 +6,9 @@ import (
 
 	"strings"
 
-	"github.com/Azure/acs-engine/pkg/api"
-	"github.com/Azure/acs-engine/pkg/armhelpers"
-	"github.com/Azure/acs-engine/pkg/i18n"
+	"github.com/Telefonica/acs-engine/pkg/api"
+	"github.com/Telefonica/acs-engine/pkg/armhelpers"
+	"github.com/Telefonica/acs-engine/pkg/i18n"
 	"github.com/Azure/azure-sdk-for-go/arm/compute"
 	uuid "github.com/satori/go.uuid"
 	"github.com/sirupsen/logrus"

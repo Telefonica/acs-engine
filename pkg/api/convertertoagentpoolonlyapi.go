@@ -3,9 +3,9 @@ package api
 import (
 	"encoding/json"
 
-	"github.com/Azure/acs-engine/pkg/api/agentPoolOnlyApi/v20170831"
-	"github.com/Azure/acs-engine/pkg/api/agentPoolOnlyApi/vlabs"
-	"github.com/Azure/acs-engine/pkg/api/common"
+	"github.com/Telefonica/acs-engine/pkg/api/agentPoolOnlyApi/v20170831"
+	"github.com/Telefonica/acs-engine/pkg/api/agentPoolOnlyApi/vlabs"
+	"github.com/Telefonica/acs-engine/pkg/api/common"
 )
 
 ///////////////////////////////////////////////////////////

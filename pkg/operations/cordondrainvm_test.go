@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Azure/acs-engine/pkg/armhelpers"
+	"github.com/Telefonica/acs-engine/pkg/armhelpers"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	log "github.com/sirupsen/logrus"

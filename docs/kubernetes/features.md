@@ -35,7 +35,7 @@ By default, the cluster will be provisioned without [Role-Based Access Control](
       }
 ```
 
-See [cluster definition](https://github.com/Azure/acs-engine/blob/master/docs/clusterdefinition.md#kubernetesconfig) for further detail.
+See [cluster definition](https://github.com/Telefonica/acs-engine/blob/master/docs/clusterdefinition.md#kubernetesconfig) for further detail.
 
 ## Managed Disks
 
@@ -142,7 +142,7 @@ When using Azure integrated networking the maxPods setting will be set to 30 by 
 
 Using the default configuration, Kubernetes allows communication between all
 Pods within a cluster. To ensure that Pods can only be accessed by authorized
-Pods, a policy enforcement is needed. To enable policy enforcement using Calico refer to the [cluster definition](https://github.com/Azure/acs-engine/blob/master/docs/clusterdefinition.md#kubernetesconfig) document under networkPolicy. There is also a reference cluster definition available [here](https://github.com/Azure/acs-engine/blob/master/examples/networkpolicy/kubernetes-calico.json).
+Pods, a policy enforcement is needed. To enable policy enforcement using Calico refer to the [cluster definition](https://github.com/Telefonica/acs-engine/blob/master/docs/clusterdefinition.md#kubernetesconfig) document under networkPolicy. There is also a reference cluster definition available [here](https://github.com/Telefonica/acs-engine/blob/master/examples/networkpolicy/kubernetes-calico.json).
 
 This will deploy a Calico node controller to every instance of the cluster
 using a Kubernetes DaemonSet. After a successful deployment you should be able
@@ -160,7 +160,7 @@ Per default Calico still allows all communication within the cluster. Using Kube
 
 * [NetworkPolicy User Guide](https://kubernetes.io/docs/user-guide/networkpolicies/)
 * [NetworkPolicy Example Walkthrough](https://kubernetes.io/docs/getting-started-guides/network-policy/walkthrough/)
-* [Calico Kubernetes](https://github.com/Azure/acs-engine/blob/master/examples/networkpolicy)
+* [Calico Kubernetes](https://github.com/Telefonica/acs-engine/blob/master/examples/networkpolicy)
 
 <a name="feat-custom-vnet"></a>
 

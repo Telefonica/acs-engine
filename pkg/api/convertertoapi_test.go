@@ -3,9 +3,9 @@ package api
 import (
 	"testing"
 
-	"github.com/Azure/acs-engine/pkg/api/common"
-	"github.com/Azure/acs-engine/pkg/api/v20170701"
-	"github.com/Azure/acs-engine/pkg/api/vlabs"
+	"github.com/Telefonica/acs-engine/pkg/api/common"
+	"github.com/Telefonica/acs-engine/pkg/api/v20170701"
+	"github.com/Telefonica/acs-engine/pkg/api/vlabs"
 )
 
 func TestAddDCOSPublicAgentPool(t *testing.T) {

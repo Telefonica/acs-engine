@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Azure/acs-engine/test/e2e/config"
-	"github.com/Azure/acs-engine/test/e2e/engine"
-	"github.com/Azure/acs-engine/test/e2e/remote"
+	"github.com/Telefonica/acs-engine/test/e2e/config"
+	"github.com/Telefonica/acs-engine/test/e2e/engine"
+	"github.com/Telefonica/acs-engine/test/e2e/remote"
 )
 
 // Cluster holds information on how to communicate with the the dcos instances

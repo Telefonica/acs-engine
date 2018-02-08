@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Azure/acs-engine/pkg/api/common"
+	"github.com/Telefonica/acs-engine/pkg/api/common"
 	"github.com/satori/uuid"
 	validator "gopkg.in/go-playground/validator.v9"
 )

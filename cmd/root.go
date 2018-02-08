@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"github.com/Azure/acs-engine/pkg/armhelpers"
+	"github.com/Telefonica/acs-engine/pkg/armhelpers"
 
 	"github.com/Azure/go-autorest/autorest/azure"
 	"github.com/satori/go.uuid"

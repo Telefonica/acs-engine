@@ -4,11 +4,11 @@ import (
 	"os"
 	"testing"
 
-	"github.com/Azure/acs-engine/pkg/api"
-	"github.com/Azure/acs-engine/pkg/api/common"
-	"github.com/Azure/acs-engine/pkg/armhelpers"
-	"github.com/Azure/acs-engine/pkg/i18n"
-	. "github.com/Azure/acs-engine/pkg/test"
+	"github.com/Telefonica/acs-engine/pkg/api"
+	"github.com/Telefonica/acs-engine/pkg/api/common"
+	"github.com/Telefonica/acs-engine/pkg/armhelpers"
+	"github.com/Telefonica/acs-engine/pkg/i18n"
+	. "github.com/Telefonica/acs-engine/pkg/test"
 	. "github.com/onsi/gomega"
 
 	. "github.com/onsi/ginkgo"

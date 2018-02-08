@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/Azure/acs-engine/pkg/api/common"
-	"github.com/Azure/acs-engine/test/e2e/config"
-	"github.com/Azure/acs-engine/test/e2e/engine"
+	"github.com/Telefonica/acs-engine/pkg/api/common"
+	"github.com/Telefonica/acs-engine/test/e2e/config"
+	"github.com/Telefonica/acs-engine/test/e2e/engine"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

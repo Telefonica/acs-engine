@@ -3,12 +3,12 @@ package api
 import (
 	neturl "net/url"
 
-	"github.com/Azure/acs-engine/pkg/api/agentPoolOnlyApi/v20170831"
-	"github.com/Azure/acs-engine/pkg/api/v20160330"
-	"github.com/Azure/acs-engine/pkg/api/v20160930"
-	"github.com/Azure/acs-engine/pkg/api/v20170131"
-	"github.com/Azure/acs-engine/pkg/api/v20170701"
-	"github.com/Azure/acs-engine/pkg/api/vlabs"
+	"github.com/Telefonica/acs-engine/pkg/api/agentPoolOnlyApi/v20170831"
+	"github.com/Telefonica/acs-engine/pkg/api/v20160330"
+	"github.com/Telefonica/acs-engine/pkg/api/v20160930"
+	"github.com/Telefonica/acs-engine/pkg/api/v20170131"
+	"github.com/Telefonica/acs-engine/pkg/api/v20170701"
+	"github.com/Telefonica/acs-engine/pkg/api/vlabs"
 	"github.com/Masterminds/semver"
 )
 

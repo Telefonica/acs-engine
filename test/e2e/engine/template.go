@@ -7,10 +7,10 @@ import (
 	"log"
 	"path/filepath"
 
-	"github.com/Azure/acs-engine/pkg/api"
-	"github.com/Azure/acs-engine/pkg/api/vlabs"
-	"github.com/Azure/acs-engine/pkg/helpers"
-	"github.com/Azure/acs-engine/test/e2e/config"
+	"github.com/Telefonica/acs-engine/pkg/api"
+	"github.com/Telefonica/acs-engine/pkg/api/vlabs"
+	"github.com/Telefonica/acs-engine/pkg/helpers"
+	"github.com/Telefonica/acs-engine/test/e2e/config"
 	"github.com/kelseyhightower/envconfig"
 )
 

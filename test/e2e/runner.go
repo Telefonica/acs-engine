@@ -5,11 +5,11 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/Azure/acs-engine/test/e2e/azure"
-	"github.com/Azure/acs-engine/test/e2e/config"
-	"github.com/Azure/acs-engine/test/e2e/engine"
-	"github.com/Azure/acs-engine/test/e2e/metrics"
-	"github.com/Azure/acs-engine/test/e2e/runner"
+	"github.com/Telefonica/acs-engine/test/e2e/azure"
+	"github.com/Telefonica/acs-engine/test/e2e/config"
+	"github.com/Telefonica/acs-engine/test/e2e/engine"
+	"github.com/Telefonica/acs-engine/test/e2e/metrics"
+	"github.com/Telefonica/acs-engine/test/e2e/runner"
 )
 
 var (

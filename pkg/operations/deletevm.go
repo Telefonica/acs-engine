@@ -3,7 +3,7 @@ package operations
 import (
 	"fmt"
 
-	"github.com/Azure/acs-engine/pkg/armhelpers"
+	"github.com/Telefonica/acs-engine/pkg/armhelpers"
 	log "github.com/sirupsen/logrus"
 )
 

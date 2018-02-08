@@ -6,7 +6,7 @@ The Azure Container Service Engine (`acs-engine`) generates ARM (Azure Resource 
 
 ## Install
 
-Binary downloads for the latest version of acs-engine for are available [here](https://github.com/Azure/acs-engine/releases/latest). Download `acs-engine` for your operating system. Extract the binary and copy it to your `$PATH`.
+Binary downloads for the latest version of acs-engine for are available [here](https://github.com/Telefonica/acs-engine/releases/latest). Download `acs-engine` for your operating system. Extract the binary and copy it to your `$PATH`.
 
 If would prefer to build `acs-engine` from source or are you are interested in contributing to `acs-engine` see [building from source](#build-acs-engine-from-source) below.
 
@@ -118,7 +118,7 @@ Flags:
 Use "acs-engine [command] --help" for more information about a command.
 ```
 
-[Here is a reference to the information on Kubernetes cluster upgrade.](https://github.com/Azure/acs-engine/blob/master/examples/k8s-upgrade/README.md)
+[Here is a reference to the information on Kubernetes cluster upgrade.](https://github.com/Telefonica/acs-engine/blob/master/examples/k8s-upgrade/README.md)
 
 [Here's a quick demo video showing the dev/build/test cycle with this setup.](https://www.youtube.com/watch?v=lc6UZmqxQMs)
 
@@ -145,7 +145,7 @@ Build acs-engine:
   2. Type `cmd` to open a command prompt
   3. Type `mkdir %GOPATH%` to create your gopath
   4. Type `cd %GOPATH%`
-  5. Type `go get -d github.com/Azure/acs-engine` to download acs-engine from GitHub
+  5. Type `go get -d github.com/Telefonica/acs-engine` to download acs-engine from GitHub
   6. Type `go get all` to get the supporting components
   7. Type `go get -u github.com/containous/go-bindata/...`
   8. Type `cd %GOPATH%\src\github.com\Azure\acs-engine\pkg\acsengine`
@@ -171,8 +171,8 @@ Setup steps:
   4. `source $HOME/.bash_profile`
 
 Build acs-engine:
-  1. Type `go get github.com/Azure/acs-engine` to get the acs-engine Github project
-  2. Type `cd $GOPATH/src/github.com/Azure/acs-engine` to change to the source directory
+  1. Type `go get github.com/Telefonica/acs-engine` to get the acs-engine Github project
+  2. Type `cd $GOPATH/src/github.com/Telefonica/acs-engine` to change to the source directory
   3. Type `make bootstrap` to install supporting components
   4. Type `make build` to build the project
   5. Type `./bin/acs-engine` to see the command line parameters
