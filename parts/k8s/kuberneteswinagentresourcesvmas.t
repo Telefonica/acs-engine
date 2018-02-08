@@ -50,8 +50,8 @@
       "apiVersion": "[variables('apiVersionStorageManagedDisks')]",
       "properties":
         {
-            "platformFaultDomainCount": "{{GetKubernetesAgentFaultDomainCount .}}",
-            "platformUpdateDomainCount": "{{GetKubernetesAgentUpdateDomainCount .}}",
+            "platformFaultDomainCount": "{{.FaultDomainCount}}",
+            "platformUpdateDomainCount": "{{.UpdateDomainCount}}",
             "managed" : "true"
         },
 

@@ -5,8 +5,8 @@
       "name": "[variables('masterAvailabilitySet')]",
       "properties":
         {
-            "platformFaultDomainCount": "{{.OrchestratorProfile.KubernetesConfig.FaultDomainCount}}",
-            "platformUpdateDomainCount": "{{.OrchestratorProfile.KubernetesConfig.UpdateDomainCount}}",
+            "platformFaultDomainCount": "{{.MasterProfile.FaultDomainCount}}",
+            "platformUpdateDomainCount": "{{.MasterProfile.UpdateDomainCount}}",
             "managed" : "true"
         },
       "type": "Microsoft.Compute/availabilitySets"

@@ -19,10 +19,10 @@ import (
 	"text/template"
 
 	//log "github.com/sirupsen/logrus"
+	"github.com/Masterminds/semver"
 	"github.com/Telefonica/acs-engine/pkg/api"
 	"github.com/Telefonica/acs-engine/pkg/helpers"
 	"github.com/Telefonica/acs-engine/pkg/i18n"
-	"github.com/Masterminds/semver"
 	"github.com/ghodss/yaml"
 )
 
@@ -1116,12 +1116,6 @@ func (t *TemplateGenerator) getTemplateFuncMap(cs *api.ContainerService) templat
 				str += makeAgentExtensionScriptCommands(cs, profile)
 			}
 			return str
-		},
-		"GetKubernetesAgentFaultDomainCount": func(_ *api.AgentPoolProfile) string {
-			return string(cs.Properties.OrchestratorProfile.KubernetesConfig.FaultDomainCount)
-		},
-		"GetKubernetesAgentUpdateDomainCount": func(_ *api.AgentPoolProfile) string {
-			return string(cs.Properties.OrchestratorProfile.KubernetesConfig.UpdateDomainCount)
 		},
 		"GetMasterSwarmCustomData": func() string {
 			files := []string{swarmProvision}

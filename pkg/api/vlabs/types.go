@@ -237,8 +237,6 @@ type KubernetesConfig struct {
 	EtcdVersion                      string            `json:"etcdVersion,omitempty"`
 	EtcdDiskSizeGB                   string            `json:"etcdDiskSizeGB,omitempty"`
 	Addons                           []KubernetesAddon `json:"addons,omitempty"`
-	FaultDomainCount                 int               `json:"faultDomainCount"`
-	UpdateDomainCount                int               `json:"updateDomainCount"`
 }
 
 // DcosConfig Configuration for DC/OS
@@ -257,6 +255,8 @@ type MasterProfile struct {
 	FirstConsecutiveStaticIP string      `json:"firstConsecutiveStaticIP,omitempty"`
 	IPAddressCount           int         `json:"ipAddressCount,omitempty" validate:"min=0,max=256"`
 	StorageProfile           string      `json:"storageProfile,omitempty" validate:"eq=StorageAccount|eq=ManagedDisks|len=0"`
+	FaultDomainCount         int         `json:"faultDomainCount"`
+	UpdateDomainCount        int         `json:"updateDomainCount"`
 	HTTPSourceAddressPrefix  string      `json:"HTTPSourceAddressPrefix,omitempty"`
 	OAuthEnabled             bool        `json:"oauthEnabled"`
 	PreProvisionExtension    *Extension  `json:"preProvisionExtension"`
@@ -305,6 +305,8 @@ type AgentPoolProfile struct {
 	Ports               []int  `json:"ports,omitempty" validate:"dive,min=1,max=65535"`
 	AvailabilityProfile string `json:"availabilityProfile"`
 	StorageProfile      string `json:"storageProfile" validate:"eq=StorageAccount|eq=ManagedDisks|len=0"`
+	FaultDomainCount    int    `json:"faultDomainCount"`
+	UpdateDomainCount   int    `json:"updateDomainCount"`
 	DiskSizesGB         []int  `json:"diskSizesGB,omitempty" validate:"max=4,dive,min=1,max=1023"`
 	VnetSubnetID        string `json:"vnetSubnetID,omitempty"`
 	IPAddressCount      int    `json:"ipAddressCount,omitempty" validate:"min=0,max=256"`
