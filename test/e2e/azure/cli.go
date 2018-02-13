@@ -7,7 +7,7 @@ import (
 	"os/exec"
 	"time"
 
-	"github.com/Azure/acs-engine/test/e2e/engine"
+	"github.com/Telefonica/acs-engine/test/e2e/engine"
 
 	"github.com/kelseyhightower/envconfig"
 )

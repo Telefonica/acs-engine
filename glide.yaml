@@ -1,4 +1,4 @@
-package: github.com/Azure/acs-engine
+package: github.com/Telefonica/acs-engine
 import:
 - package: github.com/Azure/azure-sdk-for-go
   version: ~v10.1.0-beta

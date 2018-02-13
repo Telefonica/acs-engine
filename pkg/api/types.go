@@ -3,13 +3,13 @@ package api
 import (
 	neturl "net/url"
 
-	"github.com/Azure/acs-engine/pkg/api/agentPoolOnlyApi/v20170831"
-	"github.com/Azure/acs-engine/pkg/api/v20160330"
-	"github.com/Azure/acs-engine/pkg/api/v20160930"
-	"github.com/Azure/acs-engine/pkg/api/v20170131"
-	"github.com/Azure/acs-engine/pkg/api/v20170701"
-	"github.com/Azure/acs-engine/pkg/api/vlabs"
 	"github.com/Masterminds/semver"
+	"github.com/Telefonica/acs-engine/pkg/api/agentPoolOnlyApi/v20170831"
+	"github.com/Telefonica/acs-engine/pkg/api/v20160330"
+	"github.com/Telefonica/acs-engine/pkg/api/v20160930"
+	"github.com/Telefonica/acs-engine/pkg/api/v20170131"
+	"github.com/Telefonica/acs-engine/pkg/api/v20170701"
+	"github.com/Telefonica/acs-engine/pkg/api/vlabs"
 )
 
 // TypeMeta describes an individual API model object
@@ -238,6 +238,8 @@ type MasterProfile struct {
 	Subnet                   string      `json:"subnet"`
 	IPAddressCount           int         `json:"ipAddressCount,omitempty"`
 	StorageProfile           string      `json:"storageProfile,omitempty"`
+	FaultDomainCount         int         `json:"faultDomainCount"`
+	UpdateDomainCount        int         `json:"updateDomainCount"`
 	HTTPSourceAddressPrefix  string      `json:"HTTPSourceAddressPrefix,omitempty"`
 	OAuthEnabled             bool        `json:"oauthEnabled"`
 	PreprovisionExtension    *Extension  `json:"preProvisionExtension"`
@@ -280,6 +282,8 @@ type AgentPoolProfile struct {
 	Ports               []int  `json:"ports,omitempty"`
 	AvailabilityProfile string `json:"availabilityProfile"`
 	StorageProfile      string `json:"storageProfile,omitempty"`
+	FaultDomainCount    int    `json:"faultDomainCount"`
+	UpdateDomainCount   int    `json:"updateDomainCount"`
 	DiskSizesGB         []int  `json:"diskSizesGB,omitempty"`
 	VnetSubnetID        string `json:"vnetSubnetID,omitempty"`
 	Subnet              string `json:"subnet"`

@@ -16,11 +16,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Azure/acs-engine/pkg/acsengine"
-	"github.com/Azure/acs-engine/test/acs-engine-test/config"
-	"github.com/Azure/acs-engine/test/acs-engine-test/metrics"
-	"github.com/Azure/acs-engine/test/acs-engine-test/promote"
-	"github.com/Azure/acs-engine/test/acs-engine-test/report"
+	"github.com/Telefonica/acs-engine/pkg/acsengine"
+	"github.com/Telefonica/acs-engine/test/acs-engine-test/config"
+	"github.com/Telefonica/acs-engine/test/acs-engine-test/metrics"
+	"github.com/Telefonica/acs-engine/test/acs-engine-test/promote"
+	"github.com/Telefonica/acs-engine/test/acs-engine-test/report"
 )
 
 const (

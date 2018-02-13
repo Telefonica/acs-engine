@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/Azure/acs-engine/pkg/api"
-	"github.com/Azure/acs-engine/pkg/api/common"
+	"github.com/Telefonica/acs-engine/pkg/api"
+	"github.com/Telefonica/acs-engine/pkg/api/common"
 	"github.com/Masterminds/semver"
 )
 

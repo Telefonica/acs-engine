@@ -7,8 +7,8 @@ import (
 
 	"os"
 
-	"github.com/Azure/acs-engine/pkg/api"
-	"github.com/Azure/acs-engine/pkg/armhelpers"
+	"github.com/Telefonica/acs-engine/pkg/api"
+	"github.com/Telefonica/acs-engine/pkg/armhelpers"
 	log "github.com/sirupsen/logrus"
 )
 

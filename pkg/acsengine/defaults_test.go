@@ -3,7 +3,7 @@ package acsengine
 import (
 	"testing"
 
-	"github.com/Azure/acs-engine/pkg/api"
+	"github.com/Telefonica/acs-engine/pkg/api"
 	. "github.com/onsi/gomega"
 )
 

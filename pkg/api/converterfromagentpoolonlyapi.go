@@ -1,6 +1,6 @@
 package api
 
-import "github.com/Azure/acs-engine/pkg/api/agentPoolOnlyApi/v20170831"
+import "github.com/Telefonica/acs-engine/pkg/api/agentPoolOnlyApi/v20170831"
 
 ///////////////////////////////////////////////////////////
 // The converter exposes functions to convert the top level

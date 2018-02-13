@@ -3,8 +3,8 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/Azure/acs-engine/pkg/api"
-	"github.com/Azure/acs-engine/pkg/helpers"
+	"github.com/Telefonica/acs-engine/pkg/api"
+	"github.com/Telefonica/acs-engine/pkg/helpers"
 	"github.com/spf13/cobra"
 )
 

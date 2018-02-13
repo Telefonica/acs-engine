@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eo pipefail
 
-ACS_ENGINE_HOME=${GOPATH}/src/github.com/Azure/acs-engine
+ACS_ENGINE_HOME=${GOPATH}/src/github.com/Telefonica/acs-engine
 
 usage() {
 	echo "$0 [-v version] [-p acs_patch_version]"

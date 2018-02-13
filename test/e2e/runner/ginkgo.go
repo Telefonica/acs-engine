@@ -6,8 +6,8 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/Azure/acs-engine/test/e2e/config"
-	"github.com/Azure/acs-engine/test/e2e/metrics"
+	"github.com/Telefonica/acs-engine/test/e2e/config"
+	"github.com/Telefonica/acs-engine/test/e2e/metrics"
 	"github.com/kelseyhightower/envconfig"
 )
 

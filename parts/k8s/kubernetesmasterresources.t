@@ -5,9 +5,9 @@
       "name": "[variables('masterAvailabilitySet')]",
       "properties":
         {
-            "platformFaultDomainCount": "3",
-            "platformUpdateDomainCount": "3",
-		        "managed" : "true"
+            "platformFaultDomainCount": "{{.MasterProfile.FaultDomainCount}}",
+            "platformUpdateDomainCount": "{{.MasterProfile.UpdateDomainCount}}",
+            "managed" : "true"
         },
       "type": "Microsoft.Compute/availabilitySets"
     },

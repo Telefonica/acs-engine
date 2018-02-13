@@ -6,7 +6,7 @@ experimental:
         - master
 jobs:
   test:
-    working_directory: /go/src/github.com/Azure/acs-engine
+    working_directory: /go/src/github.com/Telefonica/acs-engine
     docker:
       - image: quay.io/deis/go-dev:v1.2.0
         environment:
@@ -35,7 +35,7 @@ jobs:
           name: Generate test coverage results
           command:  make coverage
   swarm-e2e:
-    working_directory: /go/src/github.com/Azure/acs-engine
+    working_directory: /go/src/github.com/Telefonica/acs-engine
     docker:
       - image: quay.io/deis/go-dev:v1.2.0
         environment:
@@ -60,9 +60,9 @@ jobs:
           command: make bootstrap build test-e2e
           no_output_timeout: "30m"
       - store_artifacts:
-          path: /go/src/github.com/Azure/acs-engine/_logs
+          path: /go/src/github.com/Telefonica/acs-engine/_logs
   dcos-e2e:
-    working_directory: /go/src/github.com/Azure/acs-engine
+    working_directory: /go/src/github.com/Telefonica/acs-engine
     docker:
       - image: quay.io/deis/go-dev:v1.2.0
         environment:
@@ -80,11 +80,11 @@ jobs:
           command: make build-binary test-dcos
           no_output_timeout: "30m"
       - store_artifacts:
-          path: /go/src/github.com/Azure/acs-engine/_logs
+          path: /go/src/github.com/Telefonica/acs-engine/_logs
       - store_artifacts:
-          path: /go/src/github.com/Azure/acs-engine/_output
+          path: /go/src/github.com/Telefonica/acs-engine/_output
   swarmmode-e2e:
-    working_directory: /go/src/github.com/Azure/acs-engine
+    working_directory: /go/src/github.com/Telefonica/acs-engine
     docker:
       - image: quay.io/deis/go-dev:v1.2.0
         environment:
@@ -109,9 +109,9 @@ jobs:
           command: make bootstrap build test-e2e
           no_output_timeout: "30m"
       - store_artifacts:
-          path: /go/src/github.com/Azure/acs-engine/_logs        
+          path: /go/src/github.com/Telefonica/acs-engine/_logs        
   k8s-1.6-release-e2e:
-    working_directory: /go/src/github.com/Azure/acs-engine
+    working_directory: /go/src/github.com/Telefonica/acs-engine
     docker:
       - image: quay.io/deis/go-dev:v1.2.0
         environment:
@@ -131,11 +131,11 @@ jobs:
           command: make build-binary test-kubernetes
           no_output_timeout: "30m"
       - store_artifacts:
-          path: /go/src/github.com/Azure/acs-engine/_logs
+          path: /go/src/github.com/Telefonica/acs-engine/_logs
       - store_artifacts:
-          path: /go/src/github.com/Azure/acs-engine/_output
+          path: /go/src/github.com/Telefonica/acs-engine/_output
   k8s-1.7-release-e2e:
-    working_directory: /go/src/github.com/Azure/acs-engine
+    working_directory: /go/src/github.com/Telefonica/acs-engine
     docker:
       - image: quay.io/deis/go-dev:v1.2.0
         environment:
@@ -155,11 +155,11 @@ jobs:
           command: make build-binary test-kubernetes
           no_output_timeout: "30m"
       - store_artifacts:
-          path: /go/src/github.com/Azure/acs-engine/_logs
+          path: /go/src/github.com/Telefonica/acs-engine/_logs
       - store_artifacts:
-          path: /go/src/github.com/Azure/acs-engine/_output
+          path: /go/src/github.com/Telefonica/acs-engine/_output
   k8s-windows-1.7-release-e2e:
-    working_directory: /go/src/github.com/Azure/acs-engine
+    working_directory: /go/src/github.com/Telefonica/acs-engine
     docker:
       - image: quay.io/deis/go-dev:v1.2.0
         environment:
@@ -178,11 +178,11 @@ jobs:
           command: make build-binary test-kubernetes
           no_output_timeout: "30m"
       - store_artifacts:
-          path: /go/src/github.com/Azure/acs-engine/_logs
+          path: /go/src/github.com/Telefonica/acs-engine/_logs
       - store_artifacts:
-          path: /go/src/github.com/Azure/acs-engine/_output
+          path: /go/src/github.com/Telefonica/acs-engine/_output
   k8s-hybrid-1.7-release-e2e:
-    working_directory: /go/src/github.com/Azure/acs-engine
+    working_directory: /go/src/github.com/Telefonica/acs-engine
     docker:
       - image: quay.io/deis/go-dev:v1.2.0
         environment:
@@ -201,11 +201,11 @@ jobs:
           command: make build-binary test-kubernetes
           no_output_timeout: "30m"
       - store_artifacts:
-          path: /go/src/github.com/Azure/acs-engine/_logs
+          path: /go/src/github.com/Telefonica/acs-engine/_logs
       - store_artifacts:
-          path: /go/src/github.com/Azure/acs-engine/_output
+          path: /go/src/github.com/Telefonica/acs-engine/_output
   k8s-1.8-release-e2e:
-    working_directory: /go/src/github.com/Azure/acs-engine
+    working_directory: /go/src/github.com/Telefonica/acs-engine
     docker:
       - image: quay.io/deis/go-dev:v1.2.0
         environment:
@@ -225,11 +225,11 @@ jobs:
           command: make build-binary test-kubernetes
           no_output_timeout: "30m"
       - store_artifacts:
-          path: /go/src/github.com/Azure/acs-engine/_logs
+          path: /go/src/github.com/Telefonica/acs-engine/_logs
       - store_artifacts:
-          path: /go/src/github.com/Azure/acs-engine/_output
+          path: /go/src/github.com/Telefonica/acs-engine/_output
   k8s-windows-1.8-release-e2e:
-    working_directory: /go/src/github.com/Azure/acs-engine
+    working_directory: /go/src/github.com/Telefonica/acs-engine
     docker:
       - image: quay.io/deis/go-dev:v1.2.0
         environment:
@@ -248,11 +248,11 @@ jobs:
           command: make build-binary test-kubernetes
           no_output_timeout: "30m"
       - store_artifacts:
-          path: /go/src/github.com/Azure/acs-engine/_logs
+          path: /go/src/github.com/Telefonica/acs-engine/_logs
       - store_artifacts:
-          path: /go/src/github.com/Azure/acs-engine/_output
+          path: /go/src/github.com/Telefonica/acs-engine/_output
   k8s-hybrid-1.8-release-e2e:
-    working_directory: /go/src/github.com/Azure/acs-engine
+    working_directory: /go/src/github.com/Telefonica/acs-engine
     docker:
       - image: quay.io/deis/go-dev:v1.2.0
         environment:
@@ -271,9 +271,9 @@ jobs:
           command: make build-binary test-kubernetes
           no_output_timeout: "30m"
       - store_artifacts:
-          path: /go/src/github.com/Azure/acs-engine/_logs
+          path: /go/src/github.com/Telefonica/acs-engine/_logs
       - store_artifacts:
-          path: /go/src/github.com/Azure/acs-engine/_output
+          path: /go/src/github.com/Telefonica/acs-engine/_output
 workflows:
   version: 2
   build_and_test_pr:

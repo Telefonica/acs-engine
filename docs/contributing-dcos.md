@@ -200,8 +200,8 @@ case common.DCOSRelease1Dot10:
 
 We encourage you to look at previous PR as example, listed bellow :
 
-- [Adding DC/OS 1.10 stable version support #1439](https://github.com/Azure/acs-engine/pull/1439/files)
-- [setting dcos test to 1.9 (current default)](https://github.com/Azure/acs-engine/pull/1443)
-- [[DC/OS] Set 1.9 as default DCOS version and upgrade Packages](https://github.com/Azure/acs-engine/pull/457)
-- [[DC/OS] Add support for DCOS 1.9 EA](https://github.com/Azure/acs-engine/pull/360)
-- [DCOS 1.8.8 Support](https://github.com/Azure/acs-engine/pull/278)
+- [Adding DC/OS 1.10 stable version support #1439](https://github.com/Telefonica/acs-engine/pull/1439/files)
+- [setting dcos test to 1.9 (current default)](https://github.com/Telefonica/acs-engine/pull/1443)
+- [[DC/OS] Set 1.9 as default DCOS version and upgrade Packages](https://github.com/Telefonica/acs-engine/pull/457)
+- [[DC/OS] Add support for DCOS 1.9 EA](https://github.com/Telefonica/acs-engine/pull/360)
+- [DCOS 1.8.8 Support](https://github.com/Telefonica/acs-engine/pull/278)

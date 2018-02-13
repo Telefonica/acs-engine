@@ -24,10 +24,10 @@ RUN git clone https://github.com/akesterson/cmdarg.git /tmp/cmdarg \
 RUN git clone https://github.com/akesterson/shunit.git /tmp/shunit \
     && cd /tmp/shunit && make install && rm -rf /tmp/shunit
 
-WORKDIR /gopath/src/github.com/Azure/acs-engine
+WORKDIR /gopath/src/github.com/Telefonica/acs-engine
 
 # Cache vendor layer
-ADD Makefile test.mk versioning.mk glide.yaml glide.lock /gopath/src/github.com/Azure/acs-engine/
+ADD Makefile test.mk versioning.mk glide.yaml glide.lock /gopath/src/github.com/Telefonica/acs-engine/
 RUN make bootstrap
 
 # https://github.com/dotnet/core/blob/master/release-notes/download-archives/2.0.0-preview2-download.md
@@ -44,4 +44,4 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install azure-cli
 
-ADD . /gopath/src/github.com/Azure/acs-engine
+ADD . /gopath/src/github.com/Telefonica/acs-engine

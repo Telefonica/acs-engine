@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/Azure/acs-engine/test/e2e/kubernetes/pod"
+	"github.com/Telefonica/acs-engine/test/e2e/kubernetes/pod"
 )
 
 // List holds a list of deployments returned from kubectl get deploy

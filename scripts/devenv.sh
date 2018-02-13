@@ -9,9 +9,9 @@ docker run -it \
 	--privileged \
 	--security-opt seccomp:unconfined \
 	-v /var/run/docker.sock:/var/run/docker.sock \
-	-v `pwd`:/gopath/src/github.com/Azure/acs-engine \
+	-v `pwd`:/gopath/src/github.com/Telefonica/acs-engine \
 	-v ~/.azure:/root/.azure \
-	-w /gopath/src/github.com/Azure/acs-engine \
+	-w /gopath/src/github.com/Telefonica/acs-engine \
 		acs-engine /bin/bash
 
 chown -R "$(logname):$(id -gn $(logname))" . ~/.azure
