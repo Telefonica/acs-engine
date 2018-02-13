@@ -1,3 +1,10 @@
+# Note
+
+This fork is not using `jteeuwen/go-bindata` due to lack of trust. The original author jteeuwen deleted his account and someone else registered in his name, so we're now trusting Traefik authors (containous) with their fork.
+
+More info: https://www.reddit.com/r/golang/comments/7vv9zz/popular_lib_gobindata_removed_from_github_or_why/
+
+
 # Microsoft Azure Container Service Engine - Builds Docker Enabled Clusters
 [![Coverage Status](https://coveralls.io/repos/github/Azure/acs-engine/badge.svg?branch=master)](https://coveralls.io/github/Azure/acs-engine?branch=master)
 [![CircleCI](https://circleci.com/gh/Azure/acs-engine/tree/master.svg?style=svg)](https://circleci.com/gh/Azure/acs-engine/tree/master)
